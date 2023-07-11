@@ -1,0 +1,637 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Second Page </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="formstyle.css">       
+    <style>
+      *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial ;
+      }
+      body{
+        background: url(main.);
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+      }
+      header{
+        top: 0%;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: ;
+        box-shadow: 0 0 10px black;
+        background: rgba(0,0,0,0.5);
+      }
+      #chk1{
+        display: none;
+      }
+        i{
+          color: #fff;
+          cursor: pointer;
+        }
+      header .logo{
+        flex: 1;
+        color: white;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-size: 10px;
+      }
+      header .search-box{
+        flex:1.5;
+        position: relative;
+      }
+      .search-box input{
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        background: #f2f2f2;
+        border-radius: 30px;
+        color: grey;
+        font-size: 14px;
+        text-align: center;
+        padding-left: 8%;
+        padding-right: 1px;
+        text-align: center;  
+      }
+      .search-box button{
+        cursor: pointer;
+        width:40px;
+        height:40px;
+        border-radius: 30px;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: -22px;
+        transform: scale(0.9);
+        background: rgb(48, 183, 48);      
+      }    
+      header ul{
+        flex: ;
+        display: flex;
+        justify-content: space-evenly;
+
+      }
+      header ul li{
+        list-style:none;
+      }
+      header ul li a{
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 10px 10px;
+      }
+      header ul li a:hover{
+        border-bottom: 2px solid cadetblue;
+      }
+      header .menu{
+        font-size: 2.5em;
+        display: none;
+      }
+      @media (max-width:1000px) {
+        .search-box :button{
+          position: absolute;
+        }
+        header ul{
+          position: fixed;
+          top: 100px;
+          background: rgba(4, 4, 4, 0.5);
+          height: calc(100vh - 100px);
+          width:50%;
+          flex-direction: column;
+          align-items: center;
+          transition: right 0.5s linear;
+        }
+        header .menu{
+          display: block;
+          width: 100px;
+          text-align: center;
+        }       
+        #chk1:checked ~ ul{
+          right: 0;
+        }
+      }
+      @media(max-width:600px){
+        header .logo{
+          font-size: 12px;
+          margin-left: 8px;
+        }
+      }
+
+
+
+
+      
+      .csstransforms {
+  transform: none;
+}
+
+.csstransforms3d {
+  transform: none;
+}
+
+.csstransitions {
+  transition: none;
+}
+
+.footer {
+  background-color: lightgrey;
+  padding: 8px 0;
+  padding-bottom: 8%;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.social-icon {
+  margin-top: 15px;
+}
+
+.col-md-3 {
+  width: 25%;
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.emails {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer_menu {
+  margin-bottom: 15px;
+}
+
+.social-network {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.social-network li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.social-network li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-network li a:hover {
+  background-color: #1abc9c;
+}
+
+.social-network li .fa {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#siteseal {
+  display: block;
+  text-align: center;
+}
+
+.col-md-12 {
+  width: 100%;
+  float: left;
+}
+
+.scrollup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  background: #1abc9c;
+  font-size: 24px;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.scrollup:hover {
+  background: #128f76;
+}
+
+.fa-angle-up {
+  margin-top: 8px;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color:black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.images{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 25%;
+}
+
+.dropdown {
+      position: relative;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: grey;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 2;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .caret {
+    display: inline-block;
+    width: 0;
+    padding-right: px;
+    height: 0;
+    vertical-align: right;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    margin-left: 6px; 
+  }
+  .paragraph-link {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .paragraph-link a {
+      text-decoration: none;
+      color: #8016c6;
+    }
+
+    .paragraph-link::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #000;
+      margin-top: 2%;
+    }
+    .container1 {
+    display: flex;
+    margin-top: 110px;
+    z-index: -99;
+    height: 1000px;
+}
+
+.left-side {
+    width: 70%;
+    background-color: #a6989850;
+    /* Additional styling for the left side */
+}
+
+.right-side {
+    width: 20%;
+    height: 0px;
+    background-color: #636a65;
+    position: fixed;
+    /* Additional styling for the right side */
+}
+        .container2 {
+    display: flex;
+    
+}
+
+.left-side2 {
+    
+    width: 70%;
+    background-color: #8790996f;
+    /* Additional styling for the left side */
+}
+
+.right-side2 {
+    margin-top: 150px;
+    width: 30%;
+    background-color: #b6b6b6ea;
+    /* Additional styling for the right side */
+}
+.card-body2{
+
+    background-color: rgb(228, 228, 228);
+}
+
+.btn1{
+    color: #0b23d5;
+    margin-top: 10px;
+    margin-left: 90px;
+    padding: 12px 28px;
+   
+}
+
+
+.card{
+    margin-top: 20px;
+}
+
+
+
+    </style>
+  </head>
+
+  
+  <body>
+    <header>
+      <div class="logo">
+        <h1>acumen</h1>
+      </div>
+      <div class="search-box">
+        <form action="">
+          <input type="text" name="search" id="srch" placeholder="Search Reports">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <ul>
+        <li><a href="#">REPORTS STORE</a></li>
+        <li><a href="#">PRESS RELEASES</a></li>
+        <li class="dropdown">
+          <a href="#">CATEGORIES<span class="caret"></span></a>
+          <div class="dropdown-content">
+     
+            <a href="#">CATEGORIES 1</a>
+            <a href="#">CATEGORIES 2</a>
+            <a href="#">CATEGORIES 3</a>
+            <a href="#">CATEGORIES 4</a>
+            <a href="#">CATEGORIES 5</a>
+            <a href="#">CATEGORIES 6</a>
+            <a href="#">CATEGORIES 7</a>
+            <a href="#">CATEGORIES 8</a>
+            <a href="#">CATEGORIES 9</a>
+            <a href="#">CATEGORIES 10</a>
+            <a href="#">CATEGORIES 11</a>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="#">SERVICES<span class="caret"></span></a>
+          <div class="dropdown-content">
+            <a href="#">Service 1</a>
+            <a href="#">Service 2</a>
+            <a href="#">Service 3</a>
+          </div>
+        </li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <div class="menu">
+        <label for="chk1">
+          <i class="fa fa-bars"></i>
+        </label>
+      </div>
+    </header>
+    <main>
+    <div>
+      <div style="position: relative; font-style: italic;">
+      
+        <nav aria-label="breadcrumb" style=" position: fixed; top: 75px; padding-left: 25px; z-index: 2;" >
+            <ol class="breadcrumb" >
+              <li class="breadcrumb-item" ><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Link 1</a></li>
+              
+            </ol>
+          </nav>
+      </div>
+      
+  <div class="container1" style="style="background-image: url(1.png);">
+      <div class="left-side" style="margin-left: 9px;">
+        <!-- Content for the left side -->
+      <h3 style="font-size: 20px;">  Hydrostatic Transmission Market Size - Global Industry, Share, Analysis, Trends and Forecast 2023 - 2032</h3>
+       <strong> Category </strong>:<a href="#">Automotive, Transportation and Logistics</a> | <strong>Published at</strong> : July-2023 | <strong>Delivery Format</strong> : PDF | <strong>Status</strong>: Published | <strong>Pages</strong> : 250
+
+
+
+       <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="width: 220px; height: 50px;"><strong>DESCRIPTION</strong></button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="width: 220px; height: 50px;"><strong>TABLE OF CONTENT</strong>
+            </button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="width: 240px; height: 50px;"><Strong>REQUEST CUSTOMIZATION</Strong>
+            </button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="width: 220px; height: 50px;"><strong>DOWNLOAD SAMPLE</strong>
+            </button>
+
+        </form>
+      </nav>
+    <div style="margin-left: 15px; margin-top: 15px;">
+        <strong>The global Hydrostatic Transmission Market size was valued at USD 5.2 Billion in 2022 and is projected to attain USD 7.8 Billion by 2032 mounting at a CAGR of 4.3% from 2023 to 2032.
+
+            Hydrostatic Transmission Market Highlights</strong><br>
+            <b>Hydrostatic Transmission Market Highlights</b>
+            <p>
+              </i>
+              Global hydrostatic transmission market revenue is poised to garner USD 7.8 billion by 2032 with a CAGR of 4.3% from 2023 to 2032.
+            </p>
+            <p>
+            </i>
+            North America hydrostatic transmission market value occupied around USD 2.3 billion in 2022
+
+          </p> <p>
+          </i>
+        </p> <p>
+        </i>
+        Asia-Pacific hydrostatic transmission market growth will record a CAGR of more than 5% from 2023 to 2032
+      </p> <p>
+      </i>
+      Among capacity, the heavy duty sub-segment occupied over US$ 2.5 billion revenue in 2022
+    </p> <p>
+    </i>
+    Based on end-users, the agriculture sub-segment gathered around 28% share in 2022
+  </p>
+  <p>
+  </i>
+  Increasing focus on sustainable and eco-friendly solutions is a popular hydrostatic transmission market trend that drives the industry demand</p>
+
+  <img src="3.jpg" alt="Avatar" style="width:100%">
+  <p></p>    
+    </div>    
+         </div>
+              
+    <div class="container2"  style="width: 1%;>
+        <div class= "left-side2">
+
+            </h1> 
+              </div>
+        <div class="right-side2"  style="color: gray;">
+               <div class="card text-center">
+            
+                
+                    <div class="card-body">
+                        
+                            <button class="btn btn-primary" type="button" >ENQURIY BEFORE BYING</button>
+                           
+                            <h2 style="color: black; margin-top: 40px; margin-left: 30px;" > Cart Summary</h2>
+                            
+                      
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="margin-top: 20px;">
+                                <input type="radio" class="btn-check1" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label  for="btnradio1" style="color: black;">Single User License USD 3200 </label></div><br>
+                              
+                                
+                              
+                                <input type="radio" class="btn-check1" name="btnradio" id="btnradio3" autocomplete="off" style="margin-top: 20px;> 
+                                <label for="btnradio3" style="color: black;">Corporate License USD 5500</label>
+                              </div><br>
+                            
+                              <a  href="#" class="btn btn-primary">QUICK BY</a>
+                     
+                      <div class="card">
+                        <img src="Pay.png" alt="Avatar" style="width:100%">
+                        
+                      </div>
+                    </div>
+                 
+    </div>
+              
+    
+    </div>
+    
+  </div>
+  
+</main>
+<div class="bottom">
+<footer>
+  <div class="footer">
+    
+    <div class="container">
+      <div class="social-icon">
+        <div class="col-md-3">
+          <h4>Get in touch</h4> <!-- USA : <address>+14079154157 </address> --> India : <address>+918983225533 </address>
+          <p><a href="mailto:sales@acumenresearchandconsulting.com" class="emails">E-mail: sales@acumenresearchandconsulting.com</a> </p>
+        </div>
+        <div class="col-md-3">
+          <h4>Menu</h4>
+          <div class="footer_menu"><a href="https://www.acumenresearchandconsulting.com/" rel="nofollow">Home</a></div>
+          <div class="footer_menu"> <a href="https://www.acumenresearchandconsulting.com/how-to-order" rel="nofollow">How to order</a></div>
+          <div class="footer_menu"><a href="https://www.acumenresearchandconsulting.com/format-and-delivery" rel="nofollow">Format and Delivery</a></div>
+          <div class="footer_menu"><a href="https://www.acumenresearchandconsulting.com/about-us" rel="nofollow">About us</a></div>
+          <div class="footer_menu"><a href="https://www.acumenresearchandconsulting.com/contact-us" rel="nofollow">Contact Us</a></div>
+          <div class="footer_menu"><a href="https://www.acumenresearchandconsulting.com/privacy-policy" rel="nofollow">Privacy Policy</a></div>
+          <div class="footer_menu"> <a href="https://www.acumenresearchandconsulting.com/disclaimer" rel="nofollow">Disclaimer</a></div>
+          <div class="footer_menu"><a href="https://www.acumenresearchandconsulting.com/terms-and-condition" rel="nofollow">Terms and Conditions</a></div>
+          <div class="footer_menu"><a href="https://www.acumenresearchandconsulting.com/return-policy" rel="nofollow">Return Policy</a></div>
+
+        </div>
+        <div class="col-md-3">
+          <h4>Locations</h4>
+                     <div class="footer_menu"><b>INDIA</b> <br> 201, Vaidehi-Saaket, Baner - Pashan Link Rd, Pashan, Pune, Maharashtra 411021</div>
+        </div>
+
+        <div class="col-md-3">
+          <h4>Follow Us</h4>
+          <ul class="social-network">
+          <ul class="social-network">
+            <li><a href="https://twitter.com/AcumenRC" class="twitter tool-tip" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/acumenresearchandconsulting" class="fb tool-tip" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/acumen-research-and-consulting" class="linkedin tool-tip" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+          <h4>We accept payments via:</h4>
+          <img src="https://www.acumenresearchandconsulting.com/images/pay-logo.jpg" class="img-responsive" alt="Payment Logos">
+
+        </div>
+
+      </div>
+      <span id="siteseal">
+        <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=00nVX2bwPi27Rac1ENE36d7eT2Gr7S3b4bv7oRgbQRFZEAFeoK5mpQTxkkZw"></script>
+      </span>
+      <div class="col-md-12">
+        <div class="copyright"> © 2023 COPYRIGHT ALL RIGHTS RESERVED | ACUMEN RESEARCH AND CONSULTING </div>
+      </div>
+      <div class="pull-right"> <a href="https://www.acumenresearchandconsulting.com/" class="scrollup" style="display: none;"><i class="fa fa-angle-up fa-3x"></i></a> </div>
+    </div>
+  </div>
+</footer>
+</div>
+</div>
+</html>
+      </body>
+    </html>
+    
