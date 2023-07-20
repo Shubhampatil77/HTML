@@ -15,132 +15,7 @@
     <link rel="stylesheet" href="formstyle.css">
        
     <style>
-      *{
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial ;
-      }
-      body{
-        background: url(main.);
-        background-size: cover;
-        height: 100vh;
-        background-position: center;
-      }
-      header{
-        top: 0%;
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        z-index: 1;
-        box-shadow: 0 0 10px black;
-        background: rgba(0,0,0,0.5);
-
-      }
-      #chk1{
-        display: none;
-      }
-        i{
-          color: #fff;
-          cursor: pointer;
-        }
-      header .logo{
-        flex: 1;
-        color: white;
-        margin-left: 20px;
-        text-transform: uppercase;
-        font-size: 10px;
-      }
-      header .search-box{
-        flex:1.5;
-        position: relative;
-      }
-      .search-box input{
-        width: 100%;
-        height: 40px;
-        border: none;
-        outline: none;
-        background: #f2f2f2;
-        border-radius: 30px;
-        color: grey;
-        font-size: 14px;
-        text-align: center;
-        padding-left: 8%;
-        padding-right: 1px;
-        text-align: center;
-        
-      }
-      .search-box button{
-        cursor: pointer;
-        width:40px;
-        height:40px;
-        border-radius: 30px;
-        border: none;
-        position: absolute;
-        top: 0;
-        right: -22px;
-        transform: scale(0.9);
-        background: rgb(48, 183, 48);
       
-      }
-    
-      header ul{
-        flex: ;
-        display: flex;
-        justify-content: space-evenly;
-
-      }
-      header ul li{
-        list-style:none;
-      }
-      header ul li a{
-        text-decoration: none;
-        color: hsl(0, 0%, 100%);
-        font-weight: 400;
-        text-transform: uppercase;
-        padding: 10px 10px;
-      }
-      header ul li a:hover{
-        border-bottom: 2px solid cadetblue;
-      }
-      header .menu{
-        font-size: 2.5em;
-        display: none;
-      }
-      @media (max-width:1000px) {
-        .search-box :button{
-          position: absolute;
-        }
-        header ul{
-          position: fixed;
-          top: 100px;
-          background: rgba(4, 4, 4, 0.5);
-          height: calc(100vh - 100px);
-          width:50%;
-          flex-direction: column;
-          align-items: center;
-          transition: right 0.5s linear;
-        }
-        header .menu{
-          display: block;
-          width: 100px;
-          text-align: center;
-        }       
-        #chk1:checked ~ ul{
-          right: 0;
-        }
-      }
-      @media(max-width:600px){
-        header .logo{
-          font-size: 12px;
-          margin-left: 8px;
-        }
-      }
-
-
 
 
       
@@ -360,13 +235,6 @@ img {
       background-color: #a9b9b2;
       margin-top: 2%;
     }
-    .scrole{
-      
-      overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-padding-block: 20px;
-    }
     </style>
   </head>
   <body>
@@ -376,14 +244,14 @@ img {
       </div>
       <div class="search-box">
         <form action="">
-          <input type="search" name="search" id="srch" placeholder="Search Reports">
+          <input type="text" name="search" id="srch" placeholder="Search Reports">
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
       <ul>
         <li><a href="#">REPORTS STORE</a></li>
         <li><a href="#">PRESS RELEASES</a></li>
-        <li class="dropdown"> 
+        <li class="dropdown">
           <a href="#">CATEGORIES<span class="caret"></span></a>
           <div class="dropdown-content">
      
@@ -439,10 +307,10 @@ img {
       </div>
         <div class="row" style="position: absolute; top: 60%; left: 35%; transform: translate(-50%, -50%);">
       <div class="col-lg-6">
-        <div class="card" style="height: 80vh; width: 700px; margin-right:200px; background-color: rgba(214, 229, 231, 0.745);">
+        <div class="card" style="height: 80vh; width: 800px; margin: 0 auto; background-color: rgba(214, 229, 231, 0.745);">
           <div class="card-body">
             <h5 class="card-title" style="font-size: 30px; background-color:  rgba(67, 61, 61, 0.25);"><strong>Recent Published Reports</strong></h5>
-       <div class="scrole">
+        <div></div>
             <div class="paragraph-link">
               <p>
                 <a href="Second Page.html">Hydrostatic Transmission Market Size - Global Industry, Share, Analysis, Trends and Forecast 2023 - 2032</a><br>This is a paragraph with a.
@@ -463,15 +331,12 @@ img {
               <p>
                 <a href="#">linkVital Signs Monitoring Devices Market Size - Global Industry, Share, Analysis, Trends and Forecast 2023 - 2032</a><br> Another paragraph with a 
               </p>
-            </div>
+            </di
             <div class="paragraph-link">
                 <p>
                   <a href="#">Show all Published Reports</a> 
                 </p>
               </div>
-              
-            </div>
-        </div>
           </body>
           </div>
         </div>
